@@ -13,7 +13,7 @@ for d in lista:
 
 operacion = Operaciones(lista_equipos)
 
-op = int(input("Para ordenar por nombre digite n, digite cualquier otra letra para ordenar por campeonato"))
+op = int(input("Para ordenar por nombre digite 1, digite 2  para ordenar por campeonato"))
 if (op== 1):
 	lista_equipos2 = operacion.ordenar_nombres()
 if(op == 2):
