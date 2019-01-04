@@ -35,3 +35,4 @@ class MiArchivoEscribir:
 
     def cerrar_archivo(self):
         self.archivo.close()
+                                                                                                                                                                                        

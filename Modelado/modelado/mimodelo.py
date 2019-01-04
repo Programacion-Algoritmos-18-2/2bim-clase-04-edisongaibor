@@ -35,11 +35,13 @@ class Equipo():
 class Operaciones(object):
     
     def __init__(self, listado):
-        self.listado_estudiantes = listado
+        self.listado_equipos = listado
 
-    def ordenar(self):
+    def ordenar_nombres(self):
+        return sorted(self.listado_equipos, key=lambda equipo: equipo.obtener_nombre())
         """
             https://docs.python.org/3/howto/sorting.html
             >>> sorted(student_objects, key=lambda student: student.age)   # sort by age
         """
-        return sorted(self.listado_estudiantes, key=lambda estudiante: estudiante.nombre)
+    def ordenar_campeonatos(self):    
+        return sorted(self.listado_equipos, key=lambda equipo: equipo.obtener_campeonatos())
